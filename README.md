@@ -17,7 +17,7 @@ The project requires following packages:
 
 The `Camera Selection` module requires drive for DaHeng cameras. You can download the drive from [here](https://www.daheng-imaging.com/downloads/)
 
-To run `main.py`, you have to include `gxipy` folder in your project location.
+To run `main.py`, you have to include `gxipy` folder in your project location. You can download them in `releases`
 
 ## Use
 
