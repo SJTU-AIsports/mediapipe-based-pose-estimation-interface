@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1415</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei UI</family>
+    <pointsize>9</pointsize>
+    <italic>false</italic>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>体操智能化识别与处理系统</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="horizontalFrame">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>40</y>
+      <width>1321</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="8,2">
+     <property name="spacing">
+      <number>80</number>
+     </property>
+     <item>
+      <widget class="QGroupBox" name="verticalGroupBox">
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="0,600,40,50">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <family>等线</family>
+            <pointsize>11</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>视频处理</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QOpenGLWidget" name="openGLWidget"/>
+        </item>
+        <item>
+         <widget class="QFrame" name="horizontalFrame_2">
+          <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="15,1,1,1">
+           <item>
+            <widget class="QSlider" name="horizontalSlider">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>播放</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>暂停</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>停止</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="horizontalFrame">
+          <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1,1">
+           <property name="spacing">
+            <number>60</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>视频启动</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>摄像头启动</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>初始化</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,30,1,30">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="horizontalGroupBox">
+         <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1">
+          <property name="spacing">
+           <number>200</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>等线</family>
+              <pointsize>11</pointsize>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>关键点数据</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QOpenGLWidget" name="openGLWidget_2"/>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="horizontalGroupBox">
+         <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="5,1">
+          <property name="spacing">
+           <number>200</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>等线</family>
+              <pointsize>11</pointsize>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>3D视图</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton">
+            <property name="font">
+             <font>
+              <family>等线</family>
+              <pointsize>11</pointsize>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>旋转</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QOpenGLWidget" name="openGLWidget_3"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1415</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QMenu" name="menuexport">
+     <property name="title">
+      <string>导出为</string>
+     </property>
+     <addaction name="actiontxt"/>
+     <addaction name="actioncsv"/>
+     <addaction name="actionmat"/>
+     <addaction name="actionnpy"/>
+    </widget>
+    <addaction name="actionselect_video"/>
+    <addaction name="menuexport"/>
+    <addaction name="actionsettings"/>
+    <addaction name="actionabout"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>显示</string>
+    </property>
+    <widget class="QMenu" name="menuselect_tools">
+     <property name="title">
+      <string>工具</string>
+     </property>
+     <widget class="QMenu" name="menuvideo_process_toolbox">
+      <property name="title">
+       <string>视频处理工具箱</string>
+      </property>
+      <addaction name="actionon"/>
+      <addaction name="actionoff"/>
+     </widget>
+     <widget class="QMenu" name="menucamera_test_toolbox">
+      <property name="title">
+       <string>相机测试工具箱</string>
+      </property>
+      <addaction name="actionon_2"/>
+      <addaction name="actionoff_2"/>
+     </widget>
+     <widget class="QMenu" name="menugrid_toolbox">
+      <property name="title">
+       <string>坐标工具箱</string>
+      </property>
+      <addaction name="actionon_3"/>
+      <addaction name="actionoff_3"/>
+     </widget>
+     <addaction name="menuvideo_process_toolbox"/>
+     <addaction name="menucamera_test_toolbox"/>
+     <addaction name="menugrid_toolbox"/>
+    </widget>
+    <addaction name="menuselect_tools"/>
+    <addaction name="actiontimer"/>
+    <addaction name="actionfile_processer"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionopen_help_menu"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionselect_video">
+   <property name="text">
+    <string>选择视频</string>
+   </property>
+   <property name="iconText">
+    <string>选择视频</string>
+   </property>
+   <property name="toolTip">
+    <string>从文件中选择需要处理的视频</string>
+   </property>
+  </action>
+  <action name="actiontxt">
+   <property name="text">
+    <string>txt</string>
+   </property>
+  </action>
+  <action name="actioncsv">
+   <property name="text">
+    <string>csv</string>
+   </property>
+  </action>
+  <action name="actionmat">
+   <property name="text">
+    <string>mat</string>
+   </property>
+  </action>
+  <action name="actionnpy">
+   <property name="text">
+    <string>npy</string>
+   </property>
+  </action>
+  <action name="actionsettings">
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="actiontimer">
+   <property name="text">
+    <string>计时器</string>
+   </property>
+  </action>
+  <action name="actionfile_processer">
+   <property name="text">
+    <string>文件处理器</string>
+   </property>
+  </action>
+  <action name="actionopen_help_menu">
+   <property name="text">
+    <string>显示帮助</string>
+   </property>
+  </action>
+  <action name="actionon">
+   <property name="text">
+    <string>开启</string>
+   </property>
+  </action>
+  <action name="actionoff">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="actionon_2">
+   <property name="text">
+    <string>开启</string>
+   </property>
+  </action>
+  <action name="actionoff_2">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+   <property name="iconText">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="actionon_3">
+   <property name="text">
+    <string>开启</string>
+   </property>
+  </action>
+  <action name="actionoff_3">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
